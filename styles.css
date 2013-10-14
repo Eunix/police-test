@@ -1,0 +1,20 @@
+body {
+  padding: 30px;
+}
+
+.jumbotron {
+  margin-bottom: 30px;
+}
+
+.answer, .question, .relax {
+  text-align: center;
+}
+
+.answer img,
+.question img {
+  height: 250px;
+}
+
+.answer img {
+  cursor:pointer;
+}
