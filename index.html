@@ -10,7 +10,15 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <div class="intro">
+        <div class="new">
+          <div class="form-group">
+            <label for="set_number">Номер набора</label>
+            <input type="text" class="form-control set_number" id="set_number" placeholder="Введите номер набора">
+          </div>
+          <button type="submit" class="btn btn-default set_button">Выбрать</button>
+        </div>
+
+        <div class="intro hide">
           <h1>Здравствуйте!</h1>
           <p>Эксперимент состоит из 20 вопросов. В каждом вопросе вам вначале будет в течение 2 секунд показано лицо человека. Вам необходимо его запомнить. Через 10 секунд вам будет представлено четыре изображения. С помощью мышки выберите лицо, показанное на предыдущем шаге.</p>
           <p>Как только будете готовы, нажмите кнопку начать.</p>
@@ -22,7 +30,7 @@
         </div>
 
         <div class="relax hide">
-          <p>Подождите</p>
+          <img src="gifs/1.gif">
         </div>
 
         <div class="answer hide">
@@ -35,7 +43,10 @@
         <div class="thankyou hide">
           <h1>Спасибо за участие!</h1>
           <p>Спасибо за участие в эксперименте. Вы нам очень помогли.</p>
-          <p><a href="#" class="btn btn-lg btn-primary download_button">Скачать результаты</a></p>
+          <p>
+            <a href="#" class="btn btn-lg btn-primary download_button">Скачать результаты</a>
+            <a href="#" class="btn btn-lg btn-default reload_button">Новый эксперимент</a>
+          </p>
         </div>
       </div>
     </div>
