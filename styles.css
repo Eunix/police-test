@@ -13,6 +13,7 @@ body {
 .answer img,
 .question img {
   height: 250px;
+  margin: 2px;
 }
 
 .answer img {
