@@ -89,16 +89,15 @@ function next_step() {
   if(window.step < 21) {
     // Preparation
     if(current_level() == 0) {
-      $(".question img").attr("src", "images/" + window.step + "/0.jpg");
+      $(".question img").attr("src", "includes/images/" + window.step + "/0.jpg");
     } else {
-      $(".question img").attr("src", "images/" + window.step + "/0_" + current_noise() + "_" + current_level() + ".jpg");
+      $(".question img").attr("src", "includes/images/" + window.step + "/0_" + current_noise() + "_" + current_level() + ".jpg");
     }
-
     $(".answer img").each(function(index) {
-      $(this).attr("src", "images/" + window.step + "/" + index + ".jpg");
+      $(this).attr("src", "includes/images/" + window.step + "/" + index + ".jpg");
       $(this).attr("data-number", index);
     });
-    $(".relax img").attr("src", "gifs/" + window.step + ".gif");
+    $(".relax img").attr("src", "includes/gifs/" + window.step + ".gif");
 
     $(".question").removeClass("hide");
 
